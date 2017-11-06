@@ -1,0 +1,23 @@
+\usepackage[normalem]{ulem}
+
+\newcommand{\add}[1]{{\color{blue!70!black} #1}}
+\newcommand{\del}[1]{{\color{blue!50} \sout{#1}}}
+\newcommand{\rep}[2]{{\color{blue!50} \sout{#1}}{\color{blue!70!black} #2}}
+
+\newcommand{\myst}{{\bf \color{purple} \hyperref[exp:myst]{mysterious}}}
+\newcommand{\cit}{{\bf \color{green!50!black} \hyperref[exp:cite]{cite}}}
+\newcommand{\wdy}{{\bf \color{orange} \hyperref[exp:wdy]{wordy}}}
+\newcommand{\unimp}{{\bf \color{blue!70} \hyperref[exp:unimp]{unimportant}}}
+
+\newcommand{\ExplanationPage}{
+\newpage
+\onecolumn
+
+\section*{Explanation of editor markings}
+\begin{itemize}
+\item \label{exp:myst} \myst: This will probably come across as mysterious to readers who don't already have the context to know what you're talking about.
+\item \label{exp:cit} \cit: You should try to cite something here (e.g. to give an example of, or justification for, what you just talked about).
+\item \label{ex:wdy} \wdy: This is stated in more words than is necessary and can probably be shortened.
+\item \label{ex:unimp} \unimp: This is not that important relative to the length/prominence it's currently given.
+\end{itemize}
+}
